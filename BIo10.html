@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Website Pembelajaran</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: mediumaquamarine;
+            padding: 0 16px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .navbar img {
+            height: 60px;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .nav-links a,
+        .dropbtn {
+            font-size: 16px;
+            color: white;
+            padding: 14px 16px;
+            text-decoration: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .nav-links a:hover,
+        .dropdown:hover .dropbtn {
+            background-color: red;
+        }
+
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        p {
+            font-size: 120%;
+            text-align: justify;
+            padding-left: 5px;
+            margin-right: 5px;
+            padding: 10px;
+        }
+
+        ol {
+            list-style-type: decimal;
+            margin-left: 20px;
+            font-size: 120%;
+        }
+
+        li {
+            padding: 5px;
+        }
+
+        footer {
+            background-color: #777;
+            padding: 20px;
+            color: white;
+            text-align: center;
+            font-size: larger;
+        }
+
+        @media (max-width: 480px) {
+            body {
+                font-size: 14px;
+            }
+
+            .navbar {
+                flex-direction: column;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .grid-container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+
+        @media (min-width: 1025px) {
+            .grid-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <img src="c:\Users\divok\OneDrive\Documents\Gambar website\images__2_-removebg-preview.png" alt="Logo" />
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+                <button class="dropbtn"> Rangkuman Materi Kelas 10 <i class="fa fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="Mtk10.html">Matematika</a>
+                    <a href="BIo10.html">Biologi</a>
+                    <a href="Sosiologi10.html">Sosiologi</a>
+                    <a href="Kimia10.html">Kimia</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn"> Rangkuman Materi Kelas 11 <i class="fa fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="Mtk11.html">Matematika</a>
+                    <a href="InSP11.html">InSP</a>
+                    <a href="Bindo11.html">Bahasa Indonesia</a>
+                </div>
+            </div>
+            <a href="Jadwal.html"> Jadwal Zoom dan Contact Person </a>
+        </div>
+    </div>
+
+    <h1 align="center"> Biologi Kelas 10 </h1>
+    <p style="text-align: center;">
+        <img src="c:\Users\divok\Downloads\Cabang biologi.jpg" width="50%">
+    </p>
+    <p> Selamat datang di pembelajaran Biologi. Disini, kami akan menuliskan rangkuman dari materi Biologi yang
+        diberikan di kelas. </p>
+
+    <h1 align="center"> Virus </h1>
+    <h2> Pengertian </h2>
+    <p> Kata “virus” ini berasal dari bahasa Latin, yaitu virion yang artinya adalah racun. Virus itu sendiri
+        selalu mengalami perkembangan dari waktu ke waktu, sehingga bisa dibilang sulit sekali mati atau hilang.
+    </p>
+    <h2> Ciri-ciri </h2>
+    <ol>
+        <li> Hanya memiliki satu jenis asam nukleat yang diselubungi oleh kapsid atau selubung protein. Asam
+            nukleat ini yaitu DNA atau RNA.
+        </li>
+        <li> Ukurannya sangat kecil yaitu antara 25 - 300 nm. Untuk 1 nm sama dengan 10-9 m.</li>
+        <li> Tubuh virus tidak berbentuk sel. Sehingga virus tidak memiliki inti sel, membran plasma, dan
+            sitoplasma.</li>
+    </ol>
+    <h2> Struktur Virus </h2>
+    <img src="c:\Users\divok\Downloads\Ilustrasi_Struktur_Virus_dan_Fungsinya-2024_04_22-22_04_53_c8cf9d7953c6f7154c22c83b9b9a6411.webp"
+        alt="Struktur Virus" style="float:right;width:300px;height:300px;">
+    <ol>
+        <li> Kepala virus. Kepala virus terdiri dari kapsid dan asam nukleat.</li>
+        <li> Leher virus. Tidak semua virus memiliki leher, hanya virus kompleks yang mempunyai leher. Bagian leher
+            virus terbagi atas kerah dan leher. Leher virus berfungsi sebagai tempat menyangga kepala virus.</li>
+        <li> Ekor virus. Ekor adalah bagian tubuh yang penting untuk melekatkan diri virus dengan sel inang.
+            Bagian ekor virus terdiri atas selubung ekor, serabut ekor, lempeng dasar dan jarum penusuk.
+        </li>
+    </ol>
+    <h2> Dampak Negatif Virus pada Manusia </h1>
+        <ol>
+            <li> Virus HIV. Virus HIV adalah virus yang akan memperlemah kekebalan tubuh manusia. Hal tersebut akan
+                menyebabkan tubuh rentan terhadap infeksi atau penyakit lainnya. Penyebab virus ini ialah adanya proses
+                kontak fisik dengan penderita HIV melalui hubungan seksual yang tidak sehat, pemakaian jarum suntik
+                bekas
+                dengan penderita HIV, penggunaan alat pembuat tato dan body piercing.</li>
+            <li> Virus Ebola. Virus Ebola virus yang menyebabkan demam, diare hingga pendarahan. Penyebaran virus
+                melalui
+                kontak dengan benda yang telah terkontaminasi cairan tubuh penderita.</li>
+        </ol>
+
+        <footer>
+            'Pendidikan sebagai fondasi masa depan, janganlah menyerah untuk mengejar hal tersebut'
+        </footer>
+</body>
+
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Website Pembelajaran</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: mediumaquamarine;
+            padding: 0 16px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .navbar img {
+            height: 60px;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .nav-links a,
+        .dropbtn {
+            font-size: 16px;
+            color: white;
+            padding: 14px 16px;
+            text-decoration: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .nav-links a:hover,
+        .dropdown:hover .dropbtn {
+            background-color: red;
+        }
+
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        p {
+            font-size: 120%;
+            text-align: justify;
+            padding-left: 5px;
+            margin-right: 5px;
+            padding: 10px;
+        }
+
+        ol {
+            list-style-type: decimal;
+            margin-left: 20px; 
+            font-size: 120%;
+        }
+
+        footer {
+            background-color: #777;
+            padding: 20px;
+            color: white;
+            text-align: center;
+            font-size: larger;
+        }
+
+        @media (max-width: 480px) {
+            body {
+                font-size: 14px;
+            }
+
+            .navbar {
+                flex-direction: column;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .grid-container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+
+        @media (min-width: 1025px) {
+            .grid-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <img src="c:\Users\divok\OneDrive\Documents\Gambar website\images__2_-removebg-preview.png" alt="Logo" />
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+                <button class="dropbtn"> Rangkuman Materi Kelas 10 <i class="fa fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="Mtk10.html">Matematika</a>
+                    <a href="BIo10.html">Biologi</a>
+                    <a href="Sosiologi10.html">Sosiologi</a>
+                    <a href="Kimia10.html">Kimia</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn"> Rangkuman Materi Kelas 11 <i class="fa fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="Mtk11.html">Matematika</a>
+                    <a href="InSP11.html">InSP</a>
+                    <a href="Bindo11.html">Bahasa Indonesia</a>
+                </div>
+            </div>
+            <a href="Jadwal.html">Jadwal Zoom dan Contact Person</a>
+        </div>
+    </div>
+
+    <h1 align="center"> Matematika Kelas 10 </h1>
+    <p style="text-align: center;">
+        <img src="c:\Users\divok\Downloads\images.png" width="50%">
+      </p>
+    <p> Selamat datang di pembelajaran Matematika Wajib Kelas 11. Disini, kami akan menuliskan rangkuman dari
+        materi Matematika yang diberikan di kelas. </p>
+
+    <h1 align="center"> Sistem Persamaan Linear Dua Variabel (SPLDV) </h1>
+    <h2> Pengertian </h2>
+    <p> Kumpulan persamaan linear yang melibatkan dua variabel yang muncul dalam bentuk persamaan linier. Variabel
+        tersebut sering disimbolkan dengan x dan y. </p>
+
+    <h2> Bentuk Umum </h2>
+    <p>
+        <li> ax + by= c </li>
+    </ol>
+    </p>
+    <h2> Langkah Penyelesaian Masalah </h2>
+    <ol>
+        <li> Metode Grafik. Metode ini mencari titik potong antara dua persamaan garis sehingga di dapatkan himpunan
+            penyelesaian dari persamaan linear dua variabel tersebut. Apabila diperoleh persamaan dua garis tersebut
+            saling sejajar, maka himpunan penyelesaiannya adalah himpunan kosong. Sedangkan jika garisnya saling
+            berhimpit maka jumlah himpunan penyelesaiannya tak berhingga. </li>
+        <p style="text-align: center;">
+            <img src="c:\Users\divok\OneDrive\Documents\Gambar website\Persamaan-Linear-Dua-Variabel-Matematika-Kelas-10-1.png" width="40%">
+        </p>
+        <li> Metode Eliminasi. Metode penyelesaian SPLDV menggunakan metode eliminasi adalah dengan menghapus atau
+            menghilangkan salah satu variabel dalam persamaan tersebut, antara x atau y. Disamping berikut adalah contoh
+            soal dan penyelesaiannya. </li>
+        <p style="text-align: center;">
+            <img src="c:\Users\divok\OneDrive\Documents\Gambar website\Screenshot 2025-04-13 194751.png" width="40%">
+        </p>
+    </ol>
+    </p>
+    <footer>
+        'Pendidikan sebagai fondasi masa depan, janganlah menyerah untuk mengejar hal tersebut'
+   </footer>
+</body>
+
+</html>

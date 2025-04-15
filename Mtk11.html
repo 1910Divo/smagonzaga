@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Website Pembelajaran</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: mediumaquamarine;
+            padding: 0 16px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .navbar img {
+            height: 60px;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .nav-links a,
+        .dropbtn {
+            font-size: 16px;
+            color: white;
+            padding: 14px 16px;
+            text-decoration: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .nav-links a:hover,
+        .dropdown:hover .dropbtn {
+            background-color: red;
+        }
+
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        p {
+            font-size: 120%;
+            text-align: justify;
+            padding-left: 5px;
+            margin-right: 5px;
+            padding: 10px;
+        }
+
+        ol {
+            list-style-type: decimal;
+            margin-left: 20px; 
+            font-size: 120%;
+        }
+
+        footer {
+            background-color: #777;
+            padding: 20px;
+            color: white;
+            text-align: center;
+            font-size: larger;
+        }
+
+        @media (max-width: 480px) {
+            body {
+                font-size: 14px;
+            }
+
+            .navbar {
+                flex-direction: column;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .grid-container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+
+        @media (min-width: 1025px) {
+            .grid-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <img src="c:\Users\divok\OneDrive\Documents\Gambar website\images__2_-removebg-preview.png" alt="Logo" />
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+                <button class="dropbtn"> Rangkuman Materi Kelas 10 <i class="fa fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="Mtk10.html">Matematika</a>
+                    <a href="BIo10.html">Biologi</a>
+                    <a href="Sosiologi10.html">Sosiologi</a>
+                    <a href="Kimia10.html">Kimia</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn"> Rangkuman Materi Kelas 11 <i class="fa fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="Mtk11.html">Matematika</a>
+                    <a href="InSP11.html">InSP</a>
+                    <a href="Bindo11.html">Bahasa Indonesia</a>
+                </div>
+            </div>
+            <a href="Jadwal.html">Jadwal Zoom dan Contact Person</a>
+        </div>
+    </div>
+
+    <h1 align="center"> Matematika Wajib Kelas 11 </h1>
+    <p style="text-align: center;">
+        <img src="c:\Users\divok\Downloads\images (4).jpg" width="40%">
+      </p>
+    <p> Selamat datang di pembelajaran Matematika Wajib Kelas 11. Disini, kami akan menuliskan rangkuman dari
+        materi Matematika Wajib yang diberikan di kelas. </p>
+
+    <h1 align="center"> Matriks </h1>
+    <h2> Pengertian </h2>
+    <p> Matriks adalah susunan bilangan-bilangan berbentuk persegi panjang yang diatur dalam baris atau kolom dengan
+        dibatasi kurung. </p>
+
+    <h2> Jenis </h2>
+    <p>
+        <img src="c:\Users\divok\Downloads\MaTRIKS.png" alt="Matriks" style="float:left;width:400px;height:180px;">
+    <ol>
+        <li> Matriks nol, matriks yang seluruh elemennya adalah bilangan nol. </li>
+        <li> Matriks baris, matriks yang hanya memiliki satu baris, berordo 1 x j. </li>
+        <li> Matriks kolom, matriks yang hanya memiliki satu kolom, berordo i x 1. </li>
+        <li> Matriks persegi, matriks yang banyaknya baris sama dengan banyaknya kolom, berordo i x i. </li>
+        <li> Matriks diagonal, matriks persegi yang semua elemennya nol, kecuali pada diagonal utamanya. </li>
+        <li> Matriks segitiga atas, matriks persegi yang semua elemen di bawah diagonal utamanya adalah nol. </li>
+        <li> Matriks segitiga bawah, matriks persegi yang semua elemen di atas diagonal utamanya adalah nol. </li>
+        <li> Matriks identitas, matriks persegi yang elemen pada diagonal utamanya adalah satu, sedangkan elemen lainnya
+            adalah nol. </li>
+    </ol>
+    </p>
+    <h2> Operasi Matriks </h2>
+    <p>
+    <ol>
+        <li> Perjumlahan dan Pengurangan. Syarat penjumlahan dan pengurangan matriks yaitu : jika terdapat dua matriks,
+            misal matriks A dan B, yang memiliki ordo sama, maka elemen-elemen yang seletak dapat dijumlahkan atau
+            dikurangkan. </li>
+
+        <li> Perkalian Matriks. Syarat dua buah matriks, misal matriks A dan matriks B, dapat dikalikan adalah jika
+            banyaknya kolom matriks A sama dengan banyaknya baris matriks B. </li>
+    </ol>
+    </p>
+    <h2> Determinan Matriks </h2>
+    <img src="c:\Users\divok\Downloads\Ordo 2x2.png" alt="Matriks1" style="float:left;width:400px;height:200px;">
+    <p> Determinan suatu matriks didefinisikan sebagai selisih antara perkalian elemen-elemen pada diagonal utama dengan
+        perkalian elemen-elemen pada diagonal sekunder. Determinan matriks hanya dapat ditentukan pada matriks persegi.
+        Ada dua jenis determinan matriks:
+    <ol>
+        <li> Ordo 2x2. Dapat dihitung dengan cara mengkalikan elemen pada diagonal utama dikurangi hasil perkalian
+            diagonal sekunder. </li>
+        <li> Ordo 3x3. Determinan matriks persegi dengan ordo 3x3 dapat dihitung dengan menggunakan dua cara, yaitu
+            metode Sorrus dan ekspansi kofaktor. Namun, cara yang paling sering digunakan dalam menentukan determinan
+            matriks ordo 3x3 adalah dengan metode Sorrus.</li>
+    </ol>
+    </p>
+    <h2> Invers Matriks </h2>
+    <p> Invers matriks adalah kebalikan dari sebuah matriks yang apabila matriks tersebut dikalikan dengan
+        inversnya, akan menjadi matriks identitas. Ada dua jenis Invers Matriks:
+    <ol>
+        <li> Ordo 2x2. Dapat dihitung dengan menukar elemen pertama dan keempat dan mengkalikan -1 pada elemen kedua dan
+            ketiga. </li>
+    </ol>
+    </p>
+    <footer>
+        'Pendidikan sebagai fondasi masa depan, janganlah menyerah untuk mengejar hal tersebut'
+   </footer>
+</body>
+</html>
